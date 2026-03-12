@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="BaTrip.Client/BaTrip.Client.csproj" />
+    <Project Path="BaTrip.Contracts/BaTrip.Contracts.csproj" />
+    <Project Path="BaTrip.Domain/BaTrip.Domain.csproj" />
+    <Project Path="BaTrip.Infrastructure/BaTrip.Infrastructure.csproj" />
+    <Project Path="BaTrip.Server/BaTrip.Server.csproj" />
+  </Folder>
+</Solution>

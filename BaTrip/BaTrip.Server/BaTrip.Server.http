@@ -1,0 +1,6 @@
+@BaTrip.Server_HostAddress = http://localhost:5039
+
+GET {{BaTrip.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

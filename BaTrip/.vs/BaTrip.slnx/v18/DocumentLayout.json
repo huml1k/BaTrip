@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\modules\\billing\\billinggrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\modules\\billing\\billinggrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\modules\\trip\\tripgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\modules\\trip\\tripgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\modules\\auth\\authgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\modules\\auth\\authgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A8798-9A35-42D7-A7EC-F32C2775DFC0}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528A8798-9A35-42D7-A7EC-F32C2775DFC0}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|solutionrelative:batrip.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.client\\batrip.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\batrip.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\batrip.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\batrip.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.client\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.client\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillingGrpcService.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Billing\\BillingGrpcService.cs",
+              "RelativeDocumentMoniker": "BaTrip.Server\\Modules\\Billing\\BillingGrpcService.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Billing\\BillingGrpcService.cs",
+              "RelativeToolTip": "BaTrip.Server\\Modules\\Billing\\BillingGrpcService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T19:26:04.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TripGrpcService.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Trip\\TripGrpcService.cs",
+              "RelativeDocumentMoniker": "BaTrip.Server\\Modules\\Trip\\TripGrpcService.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Trip\\TripGrpcService.cs",
+              "RelativeToolTip": "BaTrip.Server\\Modules\\Trip\\TripGrpcService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T19:25:16.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthGrpcService.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Auth\\AuthGrpcService.cs",
+              "RelativeDocumentMoniker": "BaTrip.Server\\Modules\\Auth\\AuthGrpcService.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Auth\\AuthGrpcService.cs",
+              "RelativeToolTip": "BaTrip.Server\\Modules\\Auth\\AuthGrpcService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T19:23:01.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BaTrip.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T19:20:31.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaTrip.Client",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+              "RelativeDocumentMoniker": "BaTrip.Client\\BaTrip.Client.csproj",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+              "RelativeToolTip": "BaTrip.Client\\BaTrip.Client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-12T18:47:35.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Program.cs",
+              "RelativeDocumentMoniker": "BaTrip.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Program.cs",
+              "RelativeToolTip": "BaTrip.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T18:25:22.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaTrip.Server",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
+              "RelativeDocumentMoniker": "BaTrip.Server\\BaTrip.Server.csproj",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
+              "RelativeToolTip": "BaTrip.Server\\BaTrip.Server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-12T18:25:20.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\Program.cs",
+              "RelativeDocumentMoniker": "BaTrip.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\Program.cs",
+              "RelativeToolTip": "BaTrip.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T18:25:15.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "BaTrip.Client\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\MainWindow.axaml",
+              "RelativeToolTip": "BaTrip.Client\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-12T18:25:03.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "BaTrip.Client\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\MainWindow.axaml.cs",
+              "RelativeToolTip": "BaTrip.Client\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T18:25:03.535Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
