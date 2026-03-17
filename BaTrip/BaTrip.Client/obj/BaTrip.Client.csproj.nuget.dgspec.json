@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj": {}
+    "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj": {
+    "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+        "projectUniqueName": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
         "projectName": "BaTrip.Client",
-        "projectPath": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+        "projectPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
         "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\obj\\",
+        "outputPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,46 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\",
+  "WorkspaceRootPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\modules\\billing\\billinggrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\modules\\billing\\billinggrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.infrastructure\\data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|solutionrelative:batrip.infrastructure\\data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\modules\\trip\\tripgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\modules\\trip\\tripgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.infrastructure\\data\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|solutionrelative:batrip.infrastructure\\data\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\modules\\auth\\authgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\modules\\auth\\authgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.infrastructure\\data\\repositories\\favoriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|solutionrelative:batrip.infrastructure\\data\\repositories\\favoriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{528A8798-9A35-42D7-A7EC-F32C2775DFC0}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528A8798-9A35-42D7-A7EC-F32C2775DFC0}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|solutionrelative:batrip.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.infrastructure\\data\\configurations\\transactionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|solutionrelative:batrip.infrastructure\\data\\configurations\\transactionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.client\\batrip.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\batrip.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|solutionrelative:batrip.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.infrastructure\\data\\configurations\\favoriteconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B206CC1-EA74-B07D-93B1-11B99D407246}|BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj|solutionrelative:batrip.infrastructure\\data\\configurations\\favoriteconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29486C49-6438-10A3-988B-EA8F0755D726}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29486C49-6438-10A3-988B-EA8F0755D726}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.server\\batrip.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7CE73BD1-F76A-452E-BCD8-A8B1DA20152D}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\batrip.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A38FE5B5-E7F8-468D-58A0-079ECFA59635}|BaTrip.Domain\\BaTrip.Domain.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.domain\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38FE5B5-E7F8-468D-58A0-079ECFA59635}|BaTrip.Domain\\BaTrip.Domain.csproj|solutionrelative:batrip.domain\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.client\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{A38FE5B5-E7F8-468D-58A0-079ECFA59635}|BaTrip.Domain\\BaTrip.Domain.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.domain\\interfaces\\repositories\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38FE5B5-E7F8-468D-58A0-079ECFA59635}|BaTrip.Domain\\BaTrip.Domain.csproj|solutionrelative:batrip.domain\\interfaces\\repositories\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|c:\\users\\hum\\desktop\\pr\\batrip\\batrip.client\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE846D25-EFB7-4720-8402-D817464B8F3F}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A38FE5B5-E7F8-468D-58A0-079ECFA59635}|BaTrip.Domain\\BaTrip.Domain.csproj|c:\\users\\hum\\desktop\\batrip\\batrip\\batrip.domain\\interfaces\\repositories\\ifavoriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38FE5B5-E7F8-468D-58A0-079ECFA59635}|BaTrip.Domain\\BaTrip.Domain.csproj|solutionrelative:batrip.domain\\interfaces\\repositories\\ifavoriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,135 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BillingGrpcService.cs",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Billing\\BillingGrpcService.cs",
-              "RelativeDocumentMoniker": "BaTrip.Server\\Modules\\Billing\\BillingGrpcService.cs",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Billing\\BillingGrpcService.cs",
-              "RelativeToolTip": "BaTrip.Server\\Modules\\Billing\\BillingGrpcService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "BaTrip.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T19:26:04.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TripGrpcService.cs",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Trip\\TripGrpcService.cs",
-              "RelativeDocumentMoniker": "BaTrip.Server\\Modules\\Trip\\TripGrpcService.cs",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Trip\\TripGrpcService.cs",
-              "RelativeToolTip": "BaTrip.Server\\Modules\\Trip\\TripGrpcService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T19:25:16.9Z",
+              "WhenOpened": "2026-03-17T19:48:58.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthGrpcService.cs",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Auth\\AuthGrpcService.cs",
-              "RelativeDocumentMoniker": "BaTrip.Server\\Modules\\Auth\\AuthGrpcService.cs",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Modules\\Auth\\AuthGrpcService.cs",
-              "RelativeToolTip": "BaTrip.Server\\Modules\\Auth\\AuthGrpcService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "FavoriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Repositories\\FavoriteRepository.cs",
+              "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Data\\Repositories\\FavoriteRepository.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Repositories\\FavoriteRepository.cs",
+              "RelativeToolTip": "BaTrip.Infrastructure\\Data\\Repositories\\FavoriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T19:23:01.744Z",
+              "WhenOpened": "2026-03-17T19:45:46.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "BaTrip.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Data\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "BaTrip.Infrastructure\\Data\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T19:20:31.492Z",
+              "WhenOpened": "2026-03-17T19:45:13.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaTrip.Client",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
-              "RelativeDocumentMoniker": "BaTrip.Client\\BaTrip.Client.csproj",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
-              "RelativeToolTip": "BaTrip.Client\\BaTrip.Client.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-12T18:47:35.46Z",
+              "DocumentIndex": 1,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Repositories\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Data\\Repositories\\TransactionRepository.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Repositories\\TransactionRepository.cs",
+              "RelativeToolTip": "BaTrip.Infrastructure\\Data\\Repositories\\TransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T19:44:52.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Server\\Program.cs",
               "RelativeDocumentMoniker": "BaTrip.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Server\\Program.cs",
               "RelativeToolTip": "BaTrip.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T18:25:22.727Z",
+              "WhenOpened": "2026-03-17T19:36:37.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BaTrip.Server",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
-              "RelativeDocumentMoniker": "BaTrip.Server\\BaTrip.Server.csproj",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
-              "RelativeToolTip": "BaTrip.Server\\BaTrip.Server.csproj",
+              "DocumentIndex": 3,
+              "Title": "TransactionConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Configurations\\TransactionConfiguration.cs",
+              "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Data\\Configurations\\TransactionConfiguration.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Configurations\\TransactionConfiguration.cs",
+              "RelativeToolTip": "BaTrip.Infrastructure\\Data\\Configurations\\TransactionConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-12T18:25:20.414Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T19:36:29.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\Program.cs",
-              "RelativeDocumentMoniker": "BaTrip.Client\\Program.cs",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\Program.cs",
-              "RelativeToolTip": "BaTrip.Client\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "FavoriteConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Configurations\\FavoriteConfiguration.cs",
+              "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Data\\Configurations\\FavoriteConfiguration.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Data\\Configurations\\FavoriteConfiguration.cs",
+              "RelativeToolTip": "BaTrip.Infrastructure\\Data\\Configurations\\FavoriteConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T18:25:15.71Z",
+              "WhenOpened": "2026-03-17T19:36:28.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "BaTrip.Domain\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "BaTrip.Domain\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T19:30:38.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\MainWindow.axaml",
-              "RelativeDocumentMoniker": "BaTrip.Client\\MainWindow.axaml",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\MainWindow.axaml",
-              "RelativeToolTip": "BaTrip.Client\\MainWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-12T18:25:03.666Z",
+              "Title": "ITransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\Interfaces\\Repositories\\ITransactionRepository.cs",
+              "RelativeDocumentMoniker": "BaTrip.Domain\\Interfaces\\Repositories\\ITransactionRepository.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\Interfaces\\Repositories\\ITransactionRepository.cs",
+              "RelativeToolTip": "BaTrip.Domain\\Interfaces\\Repositories\\ITransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T19:30:36.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\MainWindow.axaml.cs",
-              "RelativeDocumentMoniker": "BaTrip.Client\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Client\\MainWindow.axaml.cs",
-              "RelativeToolTip": "BaTrip.Client\\MainWindow.axaml.cs",
+              "Title": "IFavoriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\Interfaces\\Repositories\\IFavoriteRepository.cs",
+              "RelativeDocumentMoniker": "BaTrip.Domain\\Interfaces\\Repositories\\IFavoriteRepository.cs",
+              "ToolTip": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\Interfaces\\Repositories\\IFavoriteRepository.cs",
+              "RelativeToolTip": "BaTrip.Domain\\Interfaces\\Repositories\\IFavoriteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T18:25:03.535Z",
+              "WhenOpened": "2026-03-17T19:30:35.739Z",
               "EditorCaption": ""
             }
           ]

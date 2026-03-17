@@ -11,6 +11,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+    <PackageReference Include="Npgsql" Version="10.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +29,12 @@
     <Folder Include="Modules\Trip\Validators\" />
     <Folder Include="Modules\Trip\DTOs\" />
     <Folder Include="Modules\Trip\Background\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaTrip.Contracts\BaTrip.Contracts.csproj" />
+    <ProjectReference Include="..\BaTrip.Domain\BaTrip.Domain.csproj" />
+    <ProjectReference Include="..\BaTrip.Infrastructure\BaTrip.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

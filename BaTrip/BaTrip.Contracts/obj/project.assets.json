@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Contracts\\BaTrip.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Contracts\\BaTrip.Contracts.csproj",
       "projectName": "BaTrip.Contracts",
-      "projectPath": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Contracts\\BaTrip.Contracts.csproj",
+      "projectPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Contracts\\BaTrip.Contracts.csproj",
       "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Contracts\\obj\\",
+      "outputPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

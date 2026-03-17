@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BaTrip.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a950dd85b1b117f13da21071304cd8e7b792a2ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("BaTrip.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BaTrip.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
