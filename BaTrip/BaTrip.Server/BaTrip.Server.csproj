@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
     <PackageReference Include="Npgsql" Version="10.0.2" />
@@ -16,15 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Modules\Auth\Services\" />
     <Folder Include="Modules\Auth\Mappers\" />
-    <Folder Include="Modules\Auth\Validators\" />
     <Folder Include="Modules\Auth\DTOs\" />
-    <Folder Include="Modules\Billing\Services\" />
     <Folder Include="Modules\Billing\Mappers\" />
-    <Folder Include="Modules\Billing\Validators\" />
     <Folder Include="Modules\Billing\DTOs\" />
-    <Folder Include="Modules\Trip\Services\" />
     <Folder Include="Modules\Trip\Mappers\" />
     <Folder Include="Modules\Trip\Validators\" />
     <Folder Include="Modules\Trip\DTOs\" />

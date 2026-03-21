@@ -1,34 +1,70 @@
 ﻿using BaTrip.Domain.Entities;
-using BaTrip.Domain.Enums;
 using BaTrip.Domain.Interfaces.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace BaTrip.Infrastructure.Data.Repositories
 {
     public class TransactionRepository : ITransactionRepository
     {
-        public Task Add(Transaction transaction)
+        private readonly AppDbContext _appDbContext;
+
+        public TransactionRepository(AppDbContext appDbContext) 
         {
+            _appDbContext = appDbContext;
+        }
+
+        public async Task Add(Transaction transaction)
+        {
+            if (transaction != null) 
+            {
+                await _appDbContext.Transactions.AddAsync(transaction);
+                await _appDbContext.SaveChangesAsync();
+            }
             throw new NotImplementedException();
         }
 
-        public Task Delete(Guid transactionId)
+        public async Task Delete(Guid transactionId)
         {
+            var transaction = await _appDbContext.Transactions.FindAsync(transactionId);
+            if (transaction != null) 
+            {
+                _appDbContext.Remove(transaction);
+                await _appDbContext.SaveChangesAsync();
+            }
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Transaction>> GetAll()
+        public async Task<IEnumerable<Transaction>> GetAll()
         {
+            var result = _appDbContext.Transactions
+                .AsNoTracking()
+                .OrderBy(x => x.CreatedDate)
+                .ToListAsync();
+            if (result != null) 
+            {
+                return await result;
+            }
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Transaction>> GetByUserId(Guid userId)
+        public async Task<IEnumerable<Transaction>> GetByUserId(Guid userId)
         {
+            var result = await _appDbContext.Transactions
+                .AsNoTracking()
+                .OrderBy(x => x.CreatedDate)
+                .Where(x => x.UserId == userId)
+                .ToListAsync();
+            if (result != null) 
+            {
+                return result;
+            }
             throw new NotImplementedException();
         }
 
-        public Task Update(Guid transactionId, TransactionStatus transactionStatus)
+        public async Task Update(Transaction transaction)
         {
-            throw new NotImplementedException();
+            _appDbContext.Transactions.Update(transaction);
+            await _appDbContext.SaveChangesAsync();
         }
     }
 }

@@ -1,28 +1,51 @@
 ﻿using BaTrip.Domain.Entities;
 using BaTrip.Domain.Interfaces.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace BaTrip.Infrastructure.Data.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        public Task Add(User user)
+        private readonly AppDbContext _appDbContext;
+
+        public UserRepository(AppDbContext appDbContext)
         {
+            _appDbContext = appDbContext;
+        }
+
+        public async Task Add(User user)
+        {
+            await _appDbContext.Users.AddAsync(user);
+            await _appDbContext.SaveChangesAsync();
+        }
+
+        public async Task Delete(Guid Id)
+        {
+            var user = await _appDbContext.Users.FindAsync(Id);
+            if (user != null)
+            {
+                _appDbContext.Remove(user);
+                await _appDbContext.SaveChangesAsync();
+            }
             throw new NotImplementedException();
         }
 
-        public Task Delete(Guid Id)
+        public async Task<User> GetByEmail(string email)
         {
+            var user = await _appDbContext.Users
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Email == email);
+            if (user != null) 
+            {
+                return user;
+            }
             throw new NotImplementedException();
         }
 
-        public Task<User> GetByEmail(string email)
+        public async Task Update(User user)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task Update(User user)
-        {
-            throw new NotImplementedException();
+            _appDbContext.Users.Update(user);
+            await _appDbContext.SaveChangesAsync();
         }
     }
 }

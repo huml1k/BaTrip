@@ -6,7 +6,7 @@ namespace BaTrip.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext() 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
             Database.EnsureCreated();
         }
@@ -19,6 +19,7 @@ namespace BaTrip.Infrastructure.Data
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new FavoriteConfiguration());
+            modelBuilder.ApplyConfiguration(new TransactionConfiguration());
         }
     }
 }

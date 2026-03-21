@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj": {}
+    "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj": {
+    "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj",
         "projectName": "BaTrip.Domain",
-        "projectPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj",
-        "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -343,20 +343,20 @@
         }
       }
     },
-    "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj": {
+    "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj",
         "projectName": "BaTrip.Infrastructure",
-        "projectPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\BaTrip.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -371,8 +371,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj": {
-                "projectPath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj"
               }
             }
           }
@@ -393,6 +393,10 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "JWT": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[10.0.5, )"
@@ -416,6 +420,10 @@
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.12.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.16.0, )"
             }
           },
           "imports": [
