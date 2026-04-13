@@ -26,8 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -60,7 +64,7 @@
               "RelativeDocumentMoniker": "BaTrip.Client\\ViewModels\\MainWindowViewModel.cs",
               "ToolTip": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\ViewModels\\MainWindowViewModel.cs",
               "RelativeToolTip": "BaTrip.Client\\ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAswDsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-09T15:34:45.572Z",
               "EditorCaption": ""
