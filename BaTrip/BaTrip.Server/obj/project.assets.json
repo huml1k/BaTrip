@@ -171,23 +171,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hum\\.nuget\\packages\\": {},
+    "C:\\Users\\alksndr\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
+      "projectUniqueName": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
       "projectName": "BaTrip.Server",
-      "projectPath": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
-      "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hum\\Desktop\\pr\\BaTrip\\BaTrip.Server\\obj\\",
+      "projectPath": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
+      "packagesPath": "C:\\Users\\alksndr\\.nuget\\packages\\",
+      "outputPath": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alksndr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -248,7 +248,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
