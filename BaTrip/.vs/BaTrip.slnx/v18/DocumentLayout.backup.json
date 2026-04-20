@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\",
   "Documents": [
     {
@@ -21,6 +22,25 @@
     {
       "AbsoluteMoniker": "D:0:0:{29486C49-6438-10A3-988B-EA8F0755D726}|BaTrip.Server\\BaTrip.Server.csproj|c:\\users\\user\\desktop\\projects\\repa\\batrip\\batrip\\batrip.server\\modules\\trip\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29486C49-6438-10A3-988B-EA8F0755D726}|BaTrip.Server\\BaTrip.Server.csproj|solutionrelative:batrip.server\\modules\\trip\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\projects\\BaTrip\\BaTrip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EAEB9EA5-04CB-ADDC-9A43-EE61F7590004}|BaTrip.Client\\BaTrip.Client.csproj|c:\\projects\\batrip\\batrip\\batrip.client\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAEB9EA5-04CB-ADDC-9A43-EE61F7590004}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAEB9EA5-04CB-ADDC-9A43-EE61F7590004}|BaTrip.Client\\BaTrip.Client.csproj|c:\\projects\\batrip\\batrip\\batrip.client\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{EAEB9EA5-04CB-ADDC-9A43-EE61F7590004}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAEB9EA5-04CB-ADDC-9A43-EE61F7590004}|BaTrip.Client\\BaTrip.Client.csproj|c:\\projects\\batrip\\batrip\\batrip.client\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAEB9EA5-04CB-ADDC-9A43-EE61F7590004}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAEB9EA5-04CB-ADDC-9A43-EE61F7590004}|BaTrip.Client\\BaTrip.Client.csproj|c:\\projects\\batrip\\batrip\\batrip.client\\batrip.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EAEB9EA5-04CB-ADDC-9A43-EE61F7590004}|BaTrip.Client\\BaTrip.Client.csproj|solutionrelative:batrip.client\\batrip.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+>>>>>>> origin/BaseUI
     }
   ],
   "DocumentGroupContainers": [
@@ -30,10 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Server\\Program.cs",
@@ -43,11 +64,47 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-21T19:58:40.005Z",
+=======
+              "DocumentIndex": 3,
+              "Title": "BaTrip.Client.csproj",
+              "DocumentMoniker": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+              "RelativeDocumentMoniker": "BaTrip.Client\\BaTrip.Client.csproj",
+              "ToolTip": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+              "RelativeToolTip": "BaTrip.Client\\BaTrip.Client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-12T22:06:39.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "BaTrip.Client\\Views\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "BaTrip.Client\\Views\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T18:36:43.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "BaTrip.Client\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "BaTrip.Client\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAswDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T15:34:45.572Z",
+>>>>>>> origin/BaseUI
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "RedisTokenCache.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Infrastructure\\Security\\RedisTokenCache.cs",
               "RelativeDocumentMoniker": "BaTrip.Infrastructure\\Security\\RedisTokenCache.cs",
@@ -96,6 +153,15 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-18T13:39:32.145Z",
               "EditorCaption": ""
+=======
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "BaTrip.Client\\Views\\MainWindow.axaml",
+              "ToolTip": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "BaTrip.Client\\Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T13:37:46.404Z"
+>>>>>>> origin/BaseUI
             }
           ]
         }

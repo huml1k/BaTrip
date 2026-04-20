@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Contracts\\BaTrip.Contracts.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Contracts\\obj\\",
+=======
+    "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
+        "projectName": "BaTrip.Server",
+        "projectPath": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Server\\BaTrip.Server.csproj",
+        "packagesPath": "C:\\Users\\alksndr\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Server\\obj\\",
+>>>>>>> origin/BaseUI
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\alksndr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> origin/BaseUI
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1167,7 +1185,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
