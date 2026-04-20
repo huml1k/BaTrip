@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BaTrip.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+029762b5ff0260ed263c2f25ca2c891c3232935a")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c33d21de9d6ff213761eaa9221004e9fe291ae4")]
+>>>>>>> origin/BaseUI
 [assembly: System.Reflection.AssemblyProductAttribute("BaTrip.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BaTrip.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

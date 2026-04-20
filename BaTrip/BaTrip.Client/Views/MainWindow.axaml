@@ -1,0 +1,95 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:BaTrip.Client.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mapsui="clr-namespace:Mapsui.UI.Avalonia;assembly=Mapsui.UI.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="BaTrip.Client.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="BaTrip"
+        WindowStartupLocation="CenterScreen"
+        CanResize="False"
+        Background="Transparent"
+        SystemDecorations="None"
+        TransparencyLevelHint="AcrylicBlur"
+        >
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid RowDefinitions="auto,*">
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.65" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+
+		<Border Grid.Row="0" PointerPressed="OnHeaderPointerPressed" CornerRadius="5,5,0,0" Background="White">
+            <Grid ColumnDefinitions="*,*">
+				<TextBlock VerticalAlignment="Center" Foreground="Gray" Grid.Column="0" Margin="10,0,10,0">BaTrip</TextBlock>
+                <Button Background="Red" Foreground="White" HorizontalAlignment="Right" Click="ToExit" Grid.Column="1">
+                    Exit
+                </Button>
+            </Grid>
+        </Border>
+
+
+        <Border Grid.Row="1" CornerRadius="0,0,5,5" BorderBrush="rgb(188,224,238)" BorderThickness="5">
+            <Grid ColumnDefinitions="auto,*" RowDefinitions="auto,auto,auto,0,auto,*">
+				<Image Grid.Row="0" HorizontalAlignment="Center" Width="100" Source="avares://BaTrip.Client/Assets/logo.jpg"></Image>
+                
+                <Grid Grid.Row="1" HorizontalAlignment="Center" ColumnDefinitions="80,80,auto">
+                    <Button Grid.Column="0" Command="{Binding ChooseTypeCommand}" CommandParameter="airplane" Padding="0">
+					    <Image Width="60" Source="avares://BaTrip.Client/Assets/avia-icon.jpg"></Image>
+                    </Button>
+					<Button Grid.Column="1" Command="{Binding ChooseTypeCommand}" CommandParameter="bus" Padding="0">
+					    <Image Width="60" Source="avares://BaTrip.Client/Assets/bus-icon.jpg"></Image>
+                    </Button>
+                    <Button Grid.Column="2" Command="{Binding ChooseTypeCommand}" CommandParameter="train" Padding="0">
+					    <Image Width="60" Source="avares://BaTrip.Client/Assets/train-icon.jpg"></Image>
+                    </Button>
+                </Grid>
+
+                <TextBox Grid.Row="2" Name="From" Text="{Binding FromInput, Delay=1000}" Margin="2,3,5,3" HorizontalAlignment="Left" Width="280" Watermark="From"></TextBox>
+                <TextBox Grid.Row="4" Name="To" Text="{Binding ToInput, Delay=1000}" Margin="2,0,5,3" HorizontalAlignment="Left" Width="280" Watermark="To"></TextBox>
+                <Button Grid.Row="3" Click="ToSwitch" Margin="0,0,8,0" HorizontalAlignment="Right" Height="30" Padding="0">
+					<Image Width="30" Source="avares://BaTrip.Client/Assets/switch-icon.jpg"></Image>
+                </Button>
+
+                <Border Grid.Row="0" Grid.RowSpan="6" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,0"></Border>
+
+                <StackPanel Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" HorizontalAlignment="Right">
+					<Grid ColumnDefinitions="70,70,70">
+						<Button Height="60" Width="60" Grid.Column="0"></Button>
+                        <Button Height="60" Width="60" Grid.Column="1"></Button>
+                        <Button Height="60" Width="60" Grid.Column="2"></Button>
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" >
+					
+                </StackPanel>
+
+                <Border Grid.Row="0" Grid.RowSpan="6" Grid.Column="1">
+					<mapsui:MapControl x:Name="Map" />
+                </Border>
+
+                <Border Grid.Column="1" Grid.Row="5" Name="Notification" VerticalAlignment="Bottom" BorderBrush="LightGray" 
+                        BorderThickness="1" HorizontalAlignment="Left" Background="White" Margin="5,0,0,5" Padding="5,3,5,3"
+                        IsVisible="{Binding IsNotificationDisplay}"> 
+					<TextBlock Text="{Binding NotificationMessage}"></TextBlock>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+
+</Window>
