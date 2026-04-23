@@ -8,5 +8,6 @@ namespace BaTrip.Domain.Interfaces.Repositories
         public Task Update(User user);
         public Task Delete(Guid Id);
         public Task<User> GetByEmail(string email);
+        public Task<User> GetById(Guid id);
     }
 }

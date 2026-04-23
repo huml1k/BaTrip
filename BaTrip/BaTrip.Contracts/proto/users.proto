@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package BaTrip.users;
+
+
+option csharp_namespace = "BaTrip.Contracts.Users";
+
+
+service UserService {
+  rpc RegistrationProfile (RegistrationRequest) returns (AuthResponse);
+  rpc LoginProfile (LoginRequest) returns (AuthResponse);
+
+  rpc GetProfile (GetProfileRequest) returns (UserProfileResponse);
+  rpc UpdateProfile (UpdateProfileRequest) returns (UserProfileResponse);
+  rpc DeleteProfile (DeleteProfileRequest) returns (DeleteProfileResponse);
+}
+
+// Запрос профиля (пустой, так как ID мы знаем из токена авторизации)
+message GetProfileRequest {
+  // Можно оставить пустым
+}
+
+message DeleteProfileRequest{
+
+}
+
+message RegistrationRequest
+{
+	string email = 1;
+	int phone = 2;
+	string firstname = 3;
+	string lastname = 4;
+	string password = 5;
+}
+
+message LoginRequest
+{
+	string email = 1;
+	string password = 2;
+}
+
+message AuthResponse
+{
+  string access_token = 1;
+  string refresh_token = 2;
+  int32 expires_in = 3;          
+  UserProfileResponse user = 4;
+}
+
+message DeleteProfileResponse {
+  bool success = 1;
+  string message = 2; 
+}
+
+message UserProfileResponse {
+  string id = 1;
+  string email = 2;
+  int phone = 3;
+  string firstname = 4;
+  string lastname = 5;
+  string password = 6;
+}

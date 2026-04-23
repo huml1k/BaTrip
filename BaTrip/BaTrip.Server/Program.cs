@@ -3,6 +3,8 @@ using BaTrip.Domain.Security;
 using BaTrip.Infrastructure.Data;
 using BaTrip.Infrastructure.Data.Repositories;
 using BaTrip.Infrastructure.Security;
+using BaTrip.Server.Modules.Auth.Services;
+using BaTrip.Server.Modules.Auth.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,7 +22,10 @@ builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IFavoriteRepository, FavoriteRepository>();
 
+// Services
 builder.Services.AddSingleton<IJwtService, JwtService>();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 
 var app = builder.Build();

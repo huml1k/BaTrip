@@ -1,14 +1,10 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "kmOZD5LEj7U=",
+  "dgSpecHash": "G+QMW78Iut8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\projects\\repa\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj",
-=======
-  "dgSpecHash": "NAPpvnIGFI4=",
-  "success": true,
-  "projectFilePath": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj",
->>>>>>> origin/BaseUI
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\hum\\Desktop\\BaTrip\\BaTrip\\BaTrip.Domain\\BaTrip.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hum\\.nuget\\packages\\tmds.dbus.protocol\\0.21.3\\tmds.dbus.protocol.0.21.3.nupkg.sha512"
+  ],
   "logs": []
 }

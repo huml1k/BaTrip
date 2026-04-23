@@ -39,7 +39,19 @@ namespace BaTrip.Infrastructure.Data.Repositories
             {
                 return user;
             }
-            throw new NotImplementedException();
+            return null;
+        }
+
+        public async Task<User> GetById(Guid id)
+        {
+            var user = await _appDbContext.Users
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Id == id);
+            if (user != null)
+            {
+                return user;
+            }
+            return null;
         }
 
         public async Task Update(User user)

@@ -12,30 +12,25 @@ namespace BaTrip.Infrastructure.Data.Configurations
 
             builder.Property(x => x.Email)
                 .IsRequired()
-                .HasColumnName("Почта")
-                .HasColumnType("string");
+                .HasColumnName("Почта");
 
             builder.Property(x => x.Phone)
                 .HasColumnName("Телефон")
-                .HasColumnType("int")
                 .HasMaxLength(12);
 
             builder.Property(x => x.FirstName)
                 .IsRequired()
                 .HasColumnName("Имя")
-                .HasColumnType("string")
                 .HasMaxLength(32);
 
             builder.Property(x => x.LastName)
                 .IsRequired()
                 .HasColumnName("Фамилия")
-                .HasColumnType("string")
                 .HasMaxLength(20);
 
             builder.Property(x => x.Password)
                 .IsRequired()
                 .HasColumnName("Пароль")
-                .HasColumnType("string")
                 .HasMaxLength(16);
 
             builder.HasMany(x => x.Transactions)
