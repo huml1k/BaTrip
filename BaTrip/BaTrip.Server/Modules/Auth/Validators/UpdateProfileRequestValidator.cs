@@ -1,17 +1,15 @@
-﻿using FluentValidation;
-using BaTrip.Contracts.Users;
+﻿using BaTrip.Contracts.Users;
+using FluentValidation;
 
 namespace BaTrip.Server.Modules.Auth.Validators
 {
-    public class RegisterRequestValidator : AbstractValidator<RegistrationRequest>
+    public class UpdateProfileRequestValidator : AbstractValidator<UpdateProfileRequest>
     {
-        public RegisterRequestValidator() 
+        public UpdateProfileRequestValidator() 
         {
             RuleFor(x => x.Email)
                 .NotEmpty().WithMessage("Email обязательный")
                 .EmailAddress().WithMessage("Неверный формат email");
-            RuleFor(x => x.Phone)
-                .GreaterThan(0).WithMessage("Номер телефона должен быть указан");
             RuleFor(x => x.Firstname)
                 .NotEmpty().WithMessage("Имя обязательно")
                 .MaximumLength(32).WithMessage("Максимальная длина имени: 32 символов");

@@ -27,7 +27,15 @@ message DeleteProfileRequest{
 message RegistrationRequest
 {
 	string email = 1;
-	int phone = 2;
+	int32 phone = 2;
+	string firstname = 3;
+	string lastname = 4;
+	string password = 5;
+}
+
+message UpdateProfileRequest
+{
+	string email = 1;
 	string firstname = 3;
 	string lastname = 4;
 	string password = 5;
@@ -55,7 +63,7 @@ message DeleteProfileResponse {
 message UserProfileResponse {
   string id = 1;
   string email = 2;
-  int phone = 3;
+  int32 phone = 3;
   string firstname = 4;
   string lastname = 5;
   string password = 6;

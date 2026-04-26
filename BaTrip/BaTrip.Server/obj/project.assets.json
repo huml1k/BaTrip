@@ -44,6 +44,67 @@
           }
         }
       },
+      "Google.Protobuf/3.34.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Grpc.AspNetCore.Server/2.76.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Net.Common": "2.76.0"
+        },
+        "compile": {
+          "lib/net10.0/Grpc.AspNetCore.Server.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Grpc.AspNetCore.Server.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Grpc.Core.Api/2.76.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.76.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core.Api": "2.76.0"
+        },
+        "compile": {
+          "lib/net10.0/Grpc.Net.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Grpc.Net.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -71,6 +132,39 @@
           "lib/net8.0/JWT.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Mapster/10.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Mapster.Core": "10.0.7"
+        },
+        "compile": {
+          "lib/net10.0/Mapster.dll": {}
+        },
+        "runtime": {
+          "lib/net10.0/Mapster.dll": {}
+        }
+      },
+      "Mapster.Core/10.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Mapster.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mapster.Core.dll": {}
+        }
+      },
+      "Mapster.DependencyInjection/10.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Mapster": "10.0.7"
+        },
+        "compile": {
+          "lib/net10.0/Mapster.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net10.0/Mapster.DependencyInjection.dll": {}
         }
       },
       "Microsoft.AspNetCore.OpenApi/10.0.2": {
@@ -871,6 +965,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "Google.Protobuf": "3.34.1",
+          "Grpc.Net.Common": "2.76.0",
           "Tmds.DBus.Protocol": "0.21.3"
         },
         "compile": {
@@ -976,6 +1072,100 @@
         "lib/net8.0/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
+    "Google.Protobuf/3.34.1": {
+      "sha512": "212vdYxRuVopGE5bess6Jg5oXWyizA6hcLPTI7G+qA4PthQEvfeof3njT+7VSY5v/+O0P22xTydiP5fSJJpGEA==",
+      "type": "package",
+      "path": "google.protobuf/3.34.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.34.1.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Grpc.AspNetCore.Server/2.76.0": {
+      "sha512": "diSC/ZeNdSdxHdYSOpYwuSBBDYpuNVtJQFJfiBB0WrYOQ4lVMmdxuUZJcViahQyo8pCvS3Mueo5lqFxwwMF/iw==",
+      "type": "package",
+      "path": "grpc.aspnetcore.server/2.76.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "grpc.aspnetcore.server.2.76.0.nupkg.sha512",
+        "grpc.aspnetcore.server.nuspec",
+        "lib/net10.0/Grpc.AspNetCore.Server.dll",
+        "lib/net10.0/Grpc.AspNetCore.Server.pdb",
+        "lib/net10.0/Grpc.AspNetCore.Server.xml",
+        "lib/net8.0/Grpc.AspNetCore.Server.dll",
+        "lib/net8.0/Grpc.AspNetCore.Server.pdb",
+        "lib/net8.0/Grpc.AspNetCore.Server.xml",
+        "lib/net9.0/Grpc.AspNetCore.Server.dll",
+        "lib/net9.0/Grpc.AspNetCore.Server.pdb",
+        "lib/net9.0/Grpc.AspNetCore.Server.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.Core.Api/2.76.0": {
+      "sha512": "cSxC2tdnFdXXuBgIn1pjc4YBx7LXTCp4M0qn+SMBS35VWZY+cEQYLWTBDDhdBH1HzU7BV+ncVZlniGQHMpRJKQ==",
+      "type": "package",
+      "path": "grpc.core.api/2.76.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "grpc.core.api.2.76.0.nupkg.sha512",
+        "grpc.core.api.nuspec",
+        "lib/net462/Grpc.Core.Api.dll",
+        "lib/net462/Grpc.Core.Api.pdb",
+        "lib/net462/Grpc.Core.Api.xml",
+        "lib/netstandard2.0/Grpc.Core.Api.dll",
+        "lib/netstandard2.0/Grpc.Core.Api.pdb",
+        "lib/netstandard2.0/Grpc.Core.Api.xml",
+        "lib/netstandard2.1/Grpc.Core.Api.dll",
+        "lib/netstandard2.1/Grpc.Core.Api.pdb",
+        "lib/netstandard2.1/Grpc.Core.Api.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.Net.Common/2.76.0": {
+      "sha512": "bZpiMVYgvpB44/wBh1RotrkqC7bg2FOasLri2GhR3hMKyzsiTxCoDE49YjPrJeFc4RW0wS8u+EInI09sjxVFRA==",
+      "type": "package",
+      "path": "grpc.net.common/2.76.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.net.common.2.76.0.nupkg.sha512",
+        "grpc.net.common.nuspec",
+        "lib/net10.0/Grpc.Net.Common.dll",
+        "lib/net10.0/Grpc.Net.Common.pdb",
+        "lib/net10.0/Grpc.Net.Common.xml",
+        "lib/net8.0/Grpc.Net.Common.dll",
+        "lib/net8.0/Grpc.Net.Common.pdb",
+        "lib/net8.0/Grpc.Net.Common.xml",
+        "lib/net9.0/Grpc.Net.Common.dll",
+        "lib/net9.0/Grpc.Net.Common.pdb",
+        "lib/net9.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.0/Grpc.Net.Common.dll",
+        "lib/netstandard2.0/Grpc.Net.Common.pdb",
+        "lib/netstandard2.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.1/Grpc.Net.Common.dll",
+        "lib/netstandard2.1/Grpc.Net.Common.pdb",
+        "lib/netstandard2.1/Grpc.Net.Common.xml",
+        "packageIcon.png"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1025,6 +1215,51 @@
         "lib/netstandard2.0/JWT.dll",
         "lib/netstandard2.0/JWT.pdb",
         "lib/netstandard2.0/JWT.xml"
+      ]
+    },
+    "Mapster/10.0.7": {
+      "sha512": "bZgWXyTM21Bc6Xrvk2BzPCFTwnvyTNSO4fUli/DVm02Kya80r5sY9ackpsECVlUqbda7ck9hr/1oKrCyI8yXmw==",
+      "type": "package",
+      "path": "mapster/10.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net10.0/Mapster.dll",
+        "lib/net8.0/Mapster.dll",
+        "lib/net9.0/Mapster.dll",
+        "lib/netstandard2.0/Mapster.dll",
+        "mapster.10.0.7.nupkg.sha512",
+        "mapster.nuspec"
+      ]
+    },
+    "Mapster.Core/10.0.7": {
+      "sha512": "73Bd0aZ+t6DoG3X4FYDfOyVgvLxgUXJKIjrps3W1n7MR03DIWI+sL62VqQSPwuJdn7WJb8HYhkH/BNZ6ZlJydw==",
+      "type": "package",
+      "path": "mapster.core/10.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/Mapster.Core.dll",
+        "mapster.core.10.0.7.nupkg.sha512",
+        "mapster.core.nuspec"
+      ]
+    },
+    "Mapster.DependencyInjection/10.0.7": {
+      "sha512": "jTLPkEH3Iii0N/dwyvpPhBPf1CdV3M4W6j8vkoLtoPZoE+LC403wBgzO8wnOZzZv+ih0l6NyVc3oNzCNxfH5vQ==",
+      "type": "package",
+      "path": "mapster.dependencyinjection/10.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net10.0/Mapster.DependencyInjection.dll",
+        "lib/net8.0/Mapster.DependencyInjection.dll",
+        "lib/net9.0/Mapster.DependencyInjection.dll",
+        "lib/netstandard2.0/Mapster.DependencyInjection.dll",
+        "mapster.dependencyinjection.10.0.7.nupkg.sha512",
+        "mapster.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/10.0.2": {
@@ -2858,6 +3093,9 @@
       "BaTrip.Infrastructure >= 1.0.0",
       "FluentValidation >= 12.1.1",
       "FluentValidation.DependencyInjectionExtensions >= 12.1.1",
+      "Grpc.AspNetCore.Server >= 2.76.0",
+      "Mapster >= 10.0.7",
+      "Mapster.DependencyInjection >= 10.0.7",
       "Microsoft.AspNetCore.OpenApi >= 10.0.2",
       "Microsoft.EntityFrameworkCore >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.5",
@@ -2934,6 +3172,18 @@
           "FluentValidation.DependencyInjectionExtensions": {
             "target": "Package",
             "version": "[12.1.1, )"
+          },
+          "Grpc.AspNetCore.Server": {
+            "target": "Package",
+            "version": "[2.76.0, )"
+          },
+          "Mapster": {
+            "target": "Package",
+            "version": "[10.0.7, )"
+          },
+          "Mapster.DependencyInjection": {
+            "target": "Package",
+            "version": "[10.0.7, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",

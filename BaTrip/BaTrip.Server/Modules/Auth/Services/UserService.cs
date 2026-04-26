@@ -3,6 +3,7 @@ using BaTrip.Domain.Interfaces.Cache;
 using BaTrip.Domain.Interfaces.Repositories;
 using BaTrip.Domain.Models;
 using BaTrip.Domain.Security;
+using BaTrip.Server.Modules.Auth.DTOs;
 using BaTrip.Server.Modules.Auth.Services.Interface;
 using Microsoft.AspNetCore.Identity;
 
@@ -28,26 +29,20 @@ namespace BaTrip.Server.Modules.Auth.Services
             _passwordHasher = passwordHasher;
         }
 
-        public async Task<TokenPair> RegistrationAccountAsync(
-            string email,
-            int phone,
-            string firstName,
-            string lastName,
-            string password,
-            CancellationToken ct = default)
+        public async Task<TokenPair> RegistrationAccountAsync(RegistrationRequestDto request, CancellationToken ct = default)
         {
-            var existingUser = await _userRepository.GetByEmail(email);
+            var existingUser = await _userRepository.GetByEmail(request.Email);
             if (existingUser != null)
                 throw new InvalidOperationException("Email already registered");
 
             var user = new User
             {
                 Id = Guid.NewGuid(),
-                Email = email,
-                Phone = phone,
-                FirstName = firstName,
-                LastName = lastName,
-                Password = _passwordHasher.Hash(password)
+                Email = request.Email,
+                Phone = request.Phone,
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                Password = _passwordHasher.Hash(request.Password)
             };
 
             await _userRepository.Add(user);
@@ -58,14 +53,11 @@ namespace BaTrip.Server.Modules.Auth.Services
             return tokens;
         }
 
-        public async Task<TokenPair> LoginAsync(
-            string email,
-            string password,
-            CancellationToken ct = default)
+        public async Task<TokenPair> LoginAsync(LoginRequestDto request, CancellationToken ct = default)
         {
-            var user = await _userRepository.GetByEmail(email);
+            var user = await _userRepository.GetByEmail(request.Email);
 
-            if (user == null || !_passwordHasher.Verify(password, user.Password))
+            if (user == null || !_passwordHasher.Verify(request.Password, user.Password))
                 throw new UnauthorizedAccessException("Invalid credentials");
 
             var tokens = _jwtService.GenerateTokens(user);
@@ -82,19 +74,15 @@ namespace BaTrip.Server.Modules.Auth.Services
             await _refreshTokenCache.RemoveAsync(userId, ct);
         }
 
-        public async Task<User> UpdateInformationUserAsync(
-            Guid userId,
-            string firstName,
-            string lastName,
-            CancellationToken ct = default)
+        public async Task<User> UpdateInformationUserAsync(Guid userId, UpdateProfileRequestDto request, CancellationToken ct = default)
         {
             var user = await _userRepository.GetById(userId);
 
             if (user == null)
                 throw new KeyNotFoundException("User not found");
 
-            user.FirstName = firstName;
-            user.LastName = lastName;
+            user.FirstName = request.FirstName;
+            user.LastName = request.LastName;
 
             await _userRepository.Update(user);
 
