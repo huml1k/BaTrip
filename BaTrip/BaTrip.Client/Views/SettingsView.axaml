@@ -1,0 +1,28 @@
+<UserControl
+	xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:BaTrip.Client.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+    x:Class="BaTrip.Client.Views.SettingsView"
+    x:DataType="vm:SettingsViewModel">
+	
+    <UserControl.Styles>
+        <Style Selector="TextBlock.header">
+			<Setter Property="FontSize" Value="40"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+		<Style Selector="TextBlock.stroke">
+			<Setter Property="Foreground" Value="Black"/>
+			<Setter Property="FontSize" Value="42"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid RowDefinitions="auto" HorizontalAlignment="Center" VerticalAlignment="Center">
+		<TextBlock Grid.Row="0" Text="Settings" Classes="stroke"/>
+        <TextBlock Grid.Row="0" Text="Settings" Classes="header"/>
+    </Grid>
+</UserControl>

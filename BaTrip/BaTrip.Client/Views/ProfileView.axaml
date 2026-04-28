@@ -1,0 +1,44 @@
+<UserControl 
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:BaTrip.Client.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+    x:Class="BaTrip.Client.Views.ProfileView"
+    x:DataType="vm:ProfileViewModel">
+    
+    <UserControl.Styles>
+        <Style Selector="TextBlock.header">
+			<Setter Property="FontSize" Value="40"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+		<Style Selector="TextBlock.stroke">
+			<Setter Property="Foreground" Value="Black"/>
+			<Setter Property="FontSize" Value="42"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Profile" Classes="stroke"/>
+        <TextBlock Grid.Row="0" Text="Profile" Classes="header"/>
+        <TextBox Grid.Row="2" Watermark="Name"/>
+        <TextBox Grid.Row="4" />
+        <TextBox Grid.Row="6" />
+        <Button Grid.Row="8" Content="Save" MinWidth="150" HorizontalContentAlignment="Center"/>
+    </Grid>
+</UserControl>

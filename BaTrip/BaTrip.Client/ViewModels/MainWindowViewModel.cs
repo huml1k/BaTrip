@@ -1,13 +1,11 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using Avalonia.Interactivity;
+using BaTrip.Client.Models;
+using BaTrip.Client.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Mapsui;
-using Mapsui.Layers;
-using Mapsui.Styles;
-using Mapsui.Tiling;
-using Mapsui.UI.Avalonia;
+using System;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace BaTrip.Client.ViewModels;
@@ -15,47 +13,79 @@ namespace BaTrip.Client.ViewModels;
 public partial class MainWindowViewModel : ViewModelBase
 {
     [ObservableProperty]
+    private bool _isEnablePanel = true;
+    [ObservableProperty]
+    private bool _isVisibleMap = true;
+    [ObservableProperty]
+    private ViewModelBase _currentPage;
+
+    [ObservableProperty]
     private string _notificationMessage = "";
     [ObservableProperty]
     private bool _isNotificationDisplay = false;
     private bool _isProcessingNotification = false;
     private ObservableCollection<string> _notificationList = new();
 
-    private readonly Map _map;
-    private readonly MapControl _mapBlock;
-    private readonly MemoryLayer _markersLayer; // слой для меток
-    private ObservableCollection<PointFeature> _markersList;
-
     [ObservableProperty]
-    private string _fromInput = "";
+    private string _fromInput;
     [ObservableProperty]
-    private string _toInput = "";
+    private string _toInput;
 
     private string _typeOfTransport;
 
-    public MainWindowViewModel(MapControl map)
+    public ObservableCollection<TripItem> Trips { get; }
+
+    public MainWindowViewModel()
     {
-        _map = new Map();
-        _markersLayer = new MemoryLayer()
-        {
-            Features = _markersList = new()
-        };
-        _map.Layers.Add(OpenStreetMap.CreateTileLayer());
-        _map.Layers.Add(_markersLayer);
-        //_map.Widgets.Add(new MouseCoordinatesWidget()); // для отслеживания координат
+        Trips = new ObservableCollection<TripItem>();
+        AddTripBlock();
+        AddTripBlock();
+        AddTripBlock();
+        AddTripBlock();
 
         _notificationList.CollectionChanged += ShowNotifications;
+    }
 
-        _mapBlock = map;
+    [RelayCommand]
+    private void OpenProfile()
+    {
+        IsVisibleMap = !IsVisibleMap;
+        IsEnablePanel = IsVisibleMap;
+        CurrentPage = new ProfileViewModel();
+    }
 
-        // настройка начальной позиции
-        _map.Navigator.CenterOnAndZoomTo(
-            new MPoint(5466400, 7460000), // координаты в EPSG:3857
-            _map.Navigator.Resolutions[5] // зум
-        );
+    [RelayCommand]
+    private void OpenCalendar()
+    {
+        IsVisibleMap = !IsVisibleMap;
+        IsEnablePanel = IsVisibleMap;
+        CurrentPage = new CalendarViewModel();
+    }
 
-        _mapBlock.Map = _map;
-        AddNotification("Map loaded");
+    [RelayCommand]
+    private void OpenSettings()
+    {
+        IsVisibleMap = !IsVisibleMap;
+        IsEnablePanel = IsVisibleMap;
+        CurrentPage = new SettingsViewModel();
+    }
+
+    [RelayCommand]
+    private void ToSwitch()
+    {
+        var state = FromInput;
+        if (FromInput != null || ToInput != null)
+        {
+            FromInput = ToInput;
+            ToInput = state;
+        }
+    }
+
+    private void AddTripBlock()
+    {
+        TripItem newTrip = new TripItem("SU737", "Kazan", "Moscow", "plane", "Аэрофлот", "16:10", "18:00");
+
+        Trips.Add(newTrip);
     }
 
     [RelayCommand]
@@ -71,13 +101,13 @@ public partial class MainWindowViewModel : ViewModelBase
         {
             if (IsTrueCity(FromInput))
             {
-                AddMarker(5468240, 7516154, "from"); 
+                //AddMarker(5468240, 7516154, "from"); 
                 AddNotification("From city is found");
             }
         }
         else
         {
-            ClearMarker("from");
+            //ClearMarker("from");
         }
     }
 
@@ -87,13 +117,13 @@ public partial class MainWindowViewModel : ViewModelBase
         {
             if (IsTrueCity(ToInput))
             {
-                AddMarker(4187000, 7510000, "to");
+                //AddMarker(4187000, 7510000, "to");
                 AddNotification("To city is found");
             }
         }
         else
         {
-            ClearMarker("to");
+            //ClearMarker("to");
         }
     }
 
@@ -103,48 +133,6 @@ public partial class MainWindowViewModel : ViewModelBase
         return true;
     }
 
-    // добавление метки
-    private void AddMarker(double x, double y, string? id = "from")
-    {
-        MPoint markerPosition = new MPoint(x, y);
-
-        // объект метки
-        var feature = new PointFeature(markerPosition)
-        {
-            ["id"] = $"{id}"
-        };
-
-        // настройка стиля отображения метки
-        var symbolStyle = new SymbolStyle
-        {
-            SymbolScale = 0.8,
-            Fill = new Brush(Color.Blue),
-            Outline = new Pen { Color = Color.White, Width = 1.5 }
-        };
-
-        var featureID = _markersList.IndexOf(_markersList.FirstOrDefault(x => x["id"].ToString() == id));
-        if(featureID != -1)
-        {
-            _markersList[featureID] = feature;
-        }
-        else
-        {
-            _markersList.Add(feature);
-        }
-        _markersLayer.Features = _markersList;
-        _markersLayer.Style = symbolStyle;
-    }
-
-    private void ClearMarker(string? id = "from")
-    {
-        var featureID = _markersList.IndexOf(_markersList.FirstOrDefault(x => x["id"] == id));
-
-        if (featureID  != -1)
-        {
-            _markersList.RemoveAt(featureID);
-            _markersLayer.Features = _markersList;
-        }
-    }
 
     private void AddNotification(string message)
     {

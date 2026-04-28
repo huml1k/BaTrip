@@ -6,5 +6,6 @@
     <Import Project="$(NuGetPackageRoot)avalonia.buildservices\11.3.2\buildTransitive\Avalonia.BuildServices.targets" Condition="Exists('$(NuGetPackageRoot)avalonia.buildservices\11.3.2\buildTransitive\Avalonia.BuildServices.targets')" />
     <Import Project="$(NuGetPackageRoot)avalonia\11.3.13\buildTransitive\Avalonia.targets" Condition="Exists('$(NuGetPackageRoot)avalonia\11.3.13\buildTransitive\Avalonia.targets')" />
     <Import Project="$(NuGetPackageRoot)communitytoolkit.mvvm\8.4.2\buildTransitive\CommunityToolkit.Mvvm.targets" Condition="Exists('$(NuGetPackageRoot)communitytoolkit.mvvm\8.4.2\buildTransitive\CommunityToolkit.Mvvm.targets')" />
+    <Import Project="$(NuGetPackageRoot)avalonia.controls.webview\11.4.0\buildTransitive\Avalonia.Controls.WebView.targets" Condition="Exists('$(NuGetPackageRoot)avalonia.controls.webview\11.4.0\buildTransitive\Avalonia.Controls.WebView.targets')" />
   </ImportGroup>
 </Project>

@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "cPmSEv/Bb60=",
+  "dgSpecHash": "QJy5xQEy4cg=",
   "success": true,
-  "projectFilePath": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+  "projectFilePath": "D:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alksndr\\.nuget\\packages\\avalonia\\11.3.13\\avalonia.11.3.13.nupkg.sha512",
     "C:\\Users\\alksndr\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.25547.20250602\\avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",
     "C:\\Users\\alksndr\\.nuget\\packages\\avalonia.buildservices\\11.3.2\\avalonia.buildservices.11.3.2.nupkg.sha512",
     "C:\\Users\\alksndr\\.nuget\\packages\\avalonia.controls.colorpicker\\11.3.13\\avalonia.controls.colorpicker.11.3.13.nupkg.sha512",
+    "C:\\Users\\alksndr\\.nuget\\packages\\avalonia.controls.datagrid\\11.3.13\\avalonia.controls.datagrid.11.3.13.nupkg.sha512",
+    "C:\\Users\\alksndr\\.nuget\\packages\\avalonia.controls.webview\\11.4.0\\avalonia.controls.webview.11.4.0.nupkg.sha512",
     "C:\\Users\\alksndr\\.nuget\\packages\\avalonia.desktop\\11.3.13\\avalonia.desktop.11.3.13.nupkg.sha512",
     "C:\\Users\\alksndr\\.nuget\\packages\\avalonia.diagnostics\\11.3.13\\avalonia.diagnostics.11.3.13.nupkg.sha512",
     "C:\\Users\\alksndr\\.nuget\\packages\\avalonia.fonts.inter\\11.3.13\\avalonia.fonts.inter.11.3.13.nupkg.sha512",
@@ -54,9 +56,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "У пакета \"Tmds.DBus.Protocol\" 0.21.2 есть известная уязвимость https://github.com/advisories/GHSA-xrw6-gwf8-vvr9 (уровень серьезности: высокий уровень)",
-      "projectPath": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+      "projectPath": "D:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
+      "filePath": "D:\\projects\\BaTrip\\BaTrip\\BaTrip.Client\\BaTrip.Client.csproj",
       "libraryId": "Tmds.DBus.Protocol",
       "targetGraphs": [
         "net10.0"

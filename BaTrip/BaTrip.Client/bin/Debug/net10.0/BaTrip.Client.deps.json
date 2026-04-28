@@ -9,6 +9,8 @@
       "BaTrip.Client/1.0.0": {
         "dependencies": {
           "Avalonia": "11.3.13",
+          "Avalonia.Controls.DataGrid": "11.3.13",
+          "Avalonia.Controls.WebView": "11.4.0",
           "Avalonia.Desktop": "11.3.13",
           "Avalonia.Diagnostics": "11.3.13",
           "Avalonia.Fonts.Inter": "11.3.13",
@@ -100,6 +102,28 @@
           "lib/net8.0/Avalonia.Controls.ColorPicker.dll": {
             "assemblyVersion": "11.3.13.0",
             "fileVersion": "11.3.13.0"
+          }
+        }
+      },
+      "Avalonia.Controls.DataGrid/11.3.13": {
+        "dependencies": {
+          "Avalonia": "11.3.13"
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Controls.DataGrid.dll": {
+            "assemblyVersion": "11.3.13.0",
+            "fileVersion": "11.3.13.0"
+          }
+        }
+      },
+      "Avalonia.Controls.WebView/11.4.0": {
+        "dependencies": {
+          "Avalonia": "11.3.13"
+        },
+        "runtime": {
+          "lib/net10.0/Avalonia.Controls.WebView.dll": {
+            "assemblyVersion": "11.4.0.0",
+            "fileVersion": "11.4.0.0"
           }
         }
       },
@@ -694,6 +718,20 @@
       "sha512": "sha512-38M23f5H25kugMZg68QLfLgMTBMngvCkIu44yVtgOF3aTqoyRZr0vKmGJJYoEn+2Ixzd0+kB8qICLKX6N/nIjA==",
       "path": "avalonia.controls.colorpicker/11.3.13",
       "hashPath": "avalonia.controls.colorpicker.11.3.13.nupkg.sha512"
+    },
+    "Avalonia.Controls.DataGrid/11.3.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Omfzm3l5ZJQHe1dCuvvadV3LkGmCzImnfOKtoXcDH632jDSwMKRGJ7S+uZRhmu7aBzRxL7PrpIfo4wdDGuzmWA==",
+      "path": "avalonia.controls.datagrid/11.3.13",
+      "hashPath": "avalonia.controls.datagrid.11.3.13.nupkg.sha512"
+    },
+    "Avalonia.Controls.WebView/11.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I5kp72dYKFwkqcW3xy+t26HVPJdr/tIufKjgzwpL2G77XZzsuX03yUH1iIb1DeM+nWaqALzr6/dpwUryjKLElQ==",
+      "path": "avalonia.controls.webview/11.4.0",
+      "hashPath": "avalonia.controls.webview.11.4.0.nupkg.sha512"
     },
     "Avalonia.Desktop/11.3.13": {
       "type": "package",
