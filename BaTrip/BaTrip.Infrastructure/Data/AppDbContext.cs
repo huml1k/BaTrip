@@ -8,7 +8,6 @@ namespace BaTrip.Infrastructure.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            Database.EnsureCreated();
         }
 
         public DbSet<User> Users { get; set; }
@@ -18,7 +17,7 @@ namespace BaTrip.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
-            modelBuilder.ApplyConfiguration(new FavoriteConfiguration());
+            //modelBuilder.ApplyConfiguration(new FavoriteConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
         }
     }

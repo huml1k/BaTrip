@@ -13,7 +13,6 @@ namespace BaTrip.Infrastructure.Data.Configurations
             builder.Property(x => x.TransactionStatus)
                 .HasColumnName("Статус")
                 .HasConversion<string>()
-                .HasColumnType("string")
                 .HasMaxLength(25);
 
             builder.Property(x => x.CreatedDate)
