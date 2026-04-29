@@ -12,7 +12,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <AvaloniaXaml Remove="Models\Новая папка\**" />
+    <Compile Remove="Models\Новая папка\**" />
+    <EmbeddedResource Remove="Models\Новая папка\**" />
+    <None Remove="Models\Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
 	<PackageReference Include="Avalonia" Version="11.3.13" />
+	<PackageReference Include="Avalonia.Controls.DataGrid" Version="11.3.13" />
+	<PackageReference Include="Avalonia.Controls.WebView" Version="11.4.0" />
     <PackageReference Include="Avalonia.Desktop" Version="11.3.13" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.13" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.13" />
@@ -24,9 +33,5 @@
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <PackageReference Include="Mapsui.Avalonia" Version="5.0.2" />
     <PackageReference Include="Tmds.DBus.Protocol" Version="0.21.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

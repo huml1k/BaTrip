@@ -11,5 +11,15 @@
   
     <Application.Styles>
         <FluentTheme />
+
+        <Style Selector="Button">
+            <Setter Property="Background" Value="LightGray" />
+            <Setter Property="TextElement.Foreground" Value="Black" />
+        </Style>
+        
+        <Style Selector="Button:pointerover ContentPresenter">
+            <Setter Property="Background" Value="Gray" />
+            <Setter Property="TextElement.Foreground" Value="Black" />
+        </Style>
     </Application.Styles>
 </Application>

@@ -1,0 +1,128 @@
+<UserControl 
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:BaTrip.Client.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+    x:Class="BaTrip.Client.Views.CalendarView"
+    x:DataType="vm:CalendarViewModel">
+    
+    <UserControl.Styles>
+        <Style Selector="Button.calendar-day">
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="Foreground" Value="#333"/>
+        </Style>
+
+        <Style Selector="TextBlock.day-of-week, TextBlock.title">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style Selector="TextBlock.stroke">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="23"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid ColumnDefinitions="auto,*">
+        
+        <!--панель для заметок-->
+        <Border Grid.Column="0" MinWidth="400" Padding="10" 
+                BorderThickness="0,0,2,0" BorderBrush="White">
+            <StackPanel Spacing="10" VerticalAlignment="Center">
+                <TextBlock Text="{Binding NotesTitle}" Classes="title"/>
+                <TextBox HorizontalAlignment="Center" TextWrapping="Wrap"
+                         MaxWidth="370" MinWidth="200" MaxLength="1400"
+                         Watermark="Place for notes" Text="{Binding NotesText}"/>
+                <Button Content="Save" MinWidth="150" IsEnabled="{Binding IsEnabledSaveButton}" 
+                        HorizontalContentAlignment="Center"
+                        BorderBrush="Black" BorderThickness="2"
+                        Command="{Binding SaveNotesCommand}"/>
+            </StackPanel>
+        </Border>
+
+        <!--календарь-->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" ColumnDefinitions="Auto,*,Auto" Margin="0,0,0,10">
+                <Button Grid.Column="0" Content="◀" 
+                        Command="{Binding PrevMonthCommand}"
+                        Width="40" Height="30"/>
+                <TextBlock Grid.Column="1" 
+                           Text="{Binding MonthTitle}" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"
+                           FontSize="18" FontWeight="SemiBold"/>
+                <Button Grid.Column="2" Content="▶" 
+                        Command="{Binding NextMonthCommand}"
+                        Width="40" Height="30"/>
+            </Grid>
+
+            <!-- Дни недели (заголовки) -->
+            <ItemsControl Grid.Row="1" ItemsSource="{Binding WeekDayShort}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="7"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Classes="day-of-week"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <!--сетка дней-->
+            <ItemsControl Grid.Row="2" ItemsSource="{Binding CalendarDays}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="7" Rows="6"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Classes="calendar-day" 
+                                Command="{Binding $parent[UserControl].DataContext.SelectDayCommand}"
+                                CommandParameter="{Binding}"
+                                IsEnabled="{Binding IsClickable}"
+                                ToolTip.Tip="{Binding CurrentDay}">
+                
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="2">
+                    
+                                <TextBlock Text="{Binding Number}" 
+                                           HorizontalAlignment="Center"
+                                           LineHeight="20"/>
+                    
+                                <TextBlock Text="~~~" 
+                                           FontSize="10" 
+                                           HorizontalAlignment="Center"
+                                           IsVisible="{Binding IsHaveNotes}"
+                                           LineHeight="16"/>
+                    
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            
+        </Grid>
+    </Grid>
+</UserControl>
