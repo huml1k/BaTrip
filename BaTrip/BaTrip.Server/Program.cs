@@ -1,8 +1,10 @@
+using BaTrip.Domain.Interfaces.Cache;
 using BaTrip.Domain.Interfaces.Repositories;
 using BaTrip.Domain.Security;
 using BaTrip.Infrastructure.Data;
 using BaTrip.Infrastructure.Data.Repositories;
 using BaTrip.Infrastructure.Security;
+using BaTrip.Server.Configurations;
 using BaTrip.Server.Modules.Auth;
 using BaTrip.Server.Modules.Auth.Mapper;
 using BaTrip.Server.Modules.Auth.Mapper.Interfaces;
@@ -11,9 +13,12 @@ using BaTrip.Server.Modules.Auth.Services.Interface;
 using BaTrip.Server.Modules.Auth.Validators;
 using FluentValidation;
 using MapsterMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption;
 using Microsoft.EntityFrameworkCore;
-using BaTrip.Server.Configurations;
+using Microsoft.IdentityModel.Tokens;
+using StackExchange.Redis;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +31,39 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.Configure<JwtSettings>(
     builder.Configuration.GetSection("Jwt")
     );
+
+var redisConnection = builder.Configuration.GetConnectionString("Redis")
+                      ?? "localhost:6379";
+
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+    ConnectionMultiplexer.Connect(redisConnection)
+);
+
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();
+
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtSettings?.Issuer,
+        ValidAudience = jwtSettings?.Audience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings?.Key ?? throw new InvalidOperationException("Jwt:Key is missing")))
+    };
+});
+builder.Services.AddAuthorization();
+
+builder.Services.AddScoped<IRefreshTokenCache, RedisTokenCache>();
+
 
 //gRPC
 builder.Services.AddGrpc();
