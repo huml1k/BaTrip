@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:BaTrip.Client.ViewModels"
+        mc:Ignorable="d"
+        x:Class="BaTrip.Client.Views.AuthWindow"
+        x:DataType="vm:AuthViewModel"
+        Title="BaTrip Authorization"
+        Width="420"
+        Height="560"
+        WindowStartupLocation="CenterScreen"
+        CanResize="False">
+
+    <Design.DataContext>
+        <vm:AuthViewModel />
+    </Design.DataContext>
+
+    <Border Padding="24">
+        <StackPanel Spacing="10">
+            <TextBlock Text="BaTrip" FontSize="26" FontWeight="Bold" HorizontalAlignment="Center" />
+            <TextBlock Text="Login / Registration" HorizontalAlignment="Center" Foreground="Gray" />
+
+            <Grid ColumnDefinitions="*,*" Margin="0,12,0,8">
+                <Button Grid.Column="0"
+                        Content="Login"
+                        Command="{Binding SwitchToLoginCommand}" />
+                <Button Grid.Column="1"
+                        Content="Register"
+                        Command="{Binding SwitchToRegisterCommand}" />
+            </Grid>
+
+            <StackPanel Spacing="10" IsVisible="{Binding IsLoginMode}">
+                <TextBox Watermark="Email" Text="{Binding Email}" />
+                <TextBox Watermark="Password" Text="{Binding Password}" />
+                <Button Content="Login"
+                        Command="{Binding SubmitCommand}"
+                        IsEnabled="{Binding IsNotBusy}"
+                        Margin="0,8,0,0"/>
+            </StackPanel>
+
+            <StackPanel Spacing="10" IsVisible="{Binding IsRegistrationMode}">
+                <TextBox Watermark="Email" Text="{Binding Email}" />
+                <TextBox Watermark="Password" Text="{Binding Password}" />
+                <TextBox Watermark="First name" Text="{Binding FirstName}" />
+                <TextBox Watermark="Last name" Text="{Binding LastName}" />
+                <TextBox Watermark="Phone" Text="{Binding Phone}" />
+                <Button Content="Create account"
+                        Command="{Binding SubmitCommand}"
+                        IsEnabled="{Binding IsNotBusy}"
+                        Margin="0,8,0,0"/>
+            </StackPanel>
+
+            <TextBlock Text="{Binding StatusMessage}" TextWrapping="Wrap" Foreground="IndianRed" />
+        </StackPanel>
+    </Border>
+</Window>

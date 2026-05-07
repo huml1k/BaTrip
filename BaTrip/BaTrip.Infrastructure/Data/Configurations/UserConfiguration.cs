@@ -31,7 +31,7 @@ namespace BaTrip.Infrastructure.Data.Configurations
             builder.Property(x => x.Password)
                 .IsRequired()
                 .HasColumnName("Пароль")
-                .HasMaxLength(16);
+                .HasMaxLength(255);
 
             builder.HasMany(x => x.Transactions)
                 .WithOne(x => x.User)

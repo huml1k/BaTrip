@@ -12,6 +12,7 @@ using BaTrip.Server.Modules.Auth.Services;
 using BaTrip.Server.Modules.Auth.Services.Interface;
 using BaTrip.Server.Modules.Auth.Validators;
 using FluentValidation;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -21,6 +22,20 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 MapperConfig.Register();
+
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenLocalhost(5039, listenOptions =>
+    {
+        listenOptions.Protocols = HttpProtocols.Http2;
+    });
+
+    options.ListenLocalhost(7170, listenOptions =>
+    {
+        listenOptions.Protocols = HttpProtocols.Http2;
+        listenOptions.UseHttps();
+    });
+});
 
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -88,7 +103,6 @@ builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 
-app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
